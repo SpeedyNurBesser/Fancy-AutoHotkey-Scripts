@@ -1,0 +1,1 @@
+﻿Run, firefox.exe -new-window https://www.photopea.com/
