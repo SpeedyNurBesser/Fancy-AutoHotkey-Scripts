@@ -4,20 +4,20 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #SingleInstance Force
 
-::bzw.::beziehungsweise
+; disables CapsLock
+; this script uses the page up and down keys, they are usually set above the arrow keys
 
-::Bsp.::Beispiel
+SetCapsLockState, AlwaysOff ; works best in combination with CapsLockToF24
+return
 
-::bspw.::beispielsweise
+CapsLock & PgUp:: 
+{
+Send {Volume_Up}
+return
+}
 
-::z.B.::zum Beispiel
-::z. B.::zum Beispiel
-
-::u.A.::unter Anderem
-::u. A.::unter Anderem
-
-::d.h.::das heißt
-::d. h.::das heißt
-
-::sog.::sogenannte
-::Sog.::Sogenannte
+CapsLock & PgDn::
+{
+Send {Volume_Down}
+return
+}
