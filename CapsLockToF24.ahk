@@ -4,7 +4,8 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #SingleInstance Force
 
-SetCapsLockState, AlwaysOff ; works best in combination with CapsLockToF24
+SetCapsLockState, AlwaysOff
 return
+
 CapsLock::Send {F24}
 return
