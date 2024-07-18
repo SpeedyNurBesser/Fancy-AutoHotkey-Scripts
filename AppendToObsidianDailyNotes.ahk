@@ -8,7 +8,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 <^>!a::
     PATH := "D:\Main\dailyNotes" ; change me!
     FILENAME := "" . PATH . "\" . A_YYYY . "." . A_MM . "." . A_DD . ".md"
-    InputBox, TEXT, Obsidian Input, , , 480, 120, , , , 90 ; closes after 90 seconds
+    InputBox, TEXT, Obsidian Input, , , 480, 120, , ,  
     if ErrorLevel
         MsgBox, Canceled. ; remove me!
     else
